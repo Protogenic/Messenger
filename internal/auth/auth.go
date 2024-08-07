@@ -1,7 +1,7 @@
 package auth
 
-import authUser "protos/generated/proto"
+import auth "messenger/protobuf/generated/proto"
 
-type AuthApi struct {
-	authUser.UnimplementedUserAuthServer
+type AuthAPI struct {
+	auth.UnimplementedUserAuthServer
 }
