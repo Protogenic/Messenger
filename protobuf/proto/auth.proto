@@ -1,7 +1,7 @@
 syntax = "proto3";
 package auth;
 
-option go_package = "https://github.com/Protogenic/Messenger";
+option go_package = "https://github.com/Protogenic/Messenger;auth";
 
 service UserAuth {
   rpc Registration(RegisterRequest) returns (RegisterResponse);
@@ -25,3 +25,4 @@ message LoginRequest {
 message LoginResponse {
   string token = 1;
 }
+
