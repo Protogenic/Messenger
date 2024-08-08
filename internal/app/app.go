@@ -7,6 +7,5 @@ import (
 
 func main() {
 	cfg := config.Load()
-
 	fmt.Println(cfg)
 }
