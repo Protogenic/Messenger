@@ -20,7 +20,8 @@ type GRPCConfig struct {
 }
 
 func Load() *Config {
-	path := fetchConfigPath()
+	//path := fetchConfigPath()
+	path := "/Users/valerashavlaygin/GolandProjects/Messenger/config/auth.yaml"
 	if path == "" {
 		panic("Config path is empty")
 	}

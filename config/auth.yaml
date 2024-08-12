@@ -2,5 +2,5 @@ env: "local"
 storage_path: "./storage/auth.db"
 token_ttl: 24h
 grpc:
-  port: 5514
+  port: 8080
   timeout: 10h
