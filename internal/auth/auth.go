@@ -10,20 +10,13 @@ type authAPI struct {
 	auth.UnimplementedUserAuthServer
 }
 
-func Register(gRPC *grpc.Server) {
-	auth.RegisterUserAuthServer(gRPC, &authAPI{})
+func Register(grpcServer *grpc.Server) {
+	auth.RegisterUserAuthServer(grpcServer, &authAPI{})
 }
 
-func (s *authAPI) Login(
-	ctx context.Context,
-	req *auth.LoginRequest,
-) (auth.LoginResponse, error) {
-	panic("no code dude")
+func (a *authAPI) Login(ctx context.Context, in *auth.LoginRequest) (*auth.LoginResponse, error) {
+	panic("eshkeerreee")
 }
-
-func (s *authAPI) Register(
-	ctx context.Context,
-	req *auth.RegisterRequest,
-) (auth.RegisterResponse, error) {
-	panic("no code dude")
+func (a *authAPI) Register(ctx context.Context, in *auth.RegisterRequest) (*auth.RegisterResponse, error) {
+	panic("eshkeerreee")
 }
